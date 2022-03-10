@@ -1,0 +1,18 @@
+.movieList{
+    list-style: none;
+    text-align: center;
+}
+
+.movieImage{
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3.0px 6.1px 6.1px hsl(0deg 0% 0% / 0.41);
+    margin: 10px;
+}
+
+@media (max-width:560px) {
+    .movieImage{ 
+        width: 90%;
+        height: auto;
+    }
+}

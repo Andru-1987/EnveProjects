@@ -8,16 +8,17 @@ const options={
 }
 
 
-    
-async function getData(url){
+const urlBase='https://api.themoviedb.org/3';    
 
+async function getData(endPoint){
+    
+    let url=urlBase+endPoint;
 
     const response=await fetch(url,options);
     const data=await response.json();
+
     
-    let movies=await data.results;
-    
-    return movies;
+    return data;
 }
 
 
@@ -30,3 +31,4 @@ async function getData(url){
 
 
 export default getData;
+

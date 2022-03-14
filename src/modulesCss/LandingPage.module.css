@@ -1,0 +1,28 @@
+.welcome{
+    
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin:0 3rem 0 3rem;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+
+    background-image: url('../cinema.jpeg');
+    border-radius: 10px;
+}
+
+p{
+    margin: 2rem;
+
+}
+
+.mainWelcome{
+    
+    font-size: 5rem;
+    color: hotpink;
+    margin: 2rem;
+    text-align: center;
+}

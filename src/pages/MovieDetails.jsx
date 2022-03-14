@@ -4,7 +4,7 @@ import gradient from "../modulesCss/GradientBorder.module.css"
 
 
 import movies from "../movies.json";
-import { useParams } from "react-router-dom";
+
 
 const imageBase='https://image.tmdb.org/t/p/w300';
 

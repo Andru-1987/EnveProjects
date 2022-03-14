@@ -5,6 +5,7 @@ import Spinner from "./Spinner";
 
 
 import getData from "../functions/httpGet";
+import Search from "./SearchFilter";
 
 export function MovieSector(){
     
@@ -30,6 +31,7 @@ export function MovieSector(){
 
     return (
         <div className={styles.maxContainer}>
+            <Search/>
             <ul className={styles.movieGrid}>
                 { movies.map(
                         (movie)=>(

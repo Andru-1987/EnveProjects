@@ -1,0 +1,49 @@
+
+
+:root{
+    --colorText:azure;
+    --colorBG:#2b2a33;
+}
+
+
+.container{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    margin:0 3rem 0 3rem;
+}
+
+.poster{
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 200px;
+    width: 100%;
+}
+
+.poster:hover{
+    box-shadow: 3.0px 6.1px 6.1px hsl(0deg 0% 0% / 0.41);
+}
+
+
+.data{
+    font-size: 2vh;
+    width: 100%;
+    text-align: justify;
+}
+
+
+.mainTitle{
+    padding: 20px;;
+    font-size: 2rem;
+}
+
+
+
+@media (max-width:560px){
+    .container{
+        flex-direction: column;
+    }
+}

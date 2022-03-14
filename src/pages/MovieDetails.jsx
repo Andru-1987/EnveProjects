@@ -10,11 +10,13 @@ const imageBase='https://image.tmdb.org/t/p/w300';
 
 
 function MovieDetails(){
-    let id=useParams();
+    let {movieId}=useParams();
+
+    let id=window.location;
     console.log(id);
 
 
-    
+
     const movie=movies[0];
     const imageURL=imageBase+movie.poster_path;
     

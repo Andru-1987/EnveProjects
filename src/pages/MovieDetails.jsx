@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../modulesCss/MovieDetails.module.css";
 import gradient from "../modulesCss/GradientBorder.module.css"
 import getData from "../functions/httpGet";
-import Spinner from "../assets/Spinner";
+import Spinner from "../components/Spinner";
 import { useParams } from "react-router-dom";
 
 const imageBase='https://image.tmdb.org/t/p/w300';
@@ -23,7 +23,10 @@ function MovieDetails(){
                 setMovie(data);
                 setLoading(false);
             }
-            )
+        );
+
+    
+
     },[movieId]);
     
 

@@ -1,31 +1,51 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Josefin+Slab:wght@100&family=Nanum+Gothic&family=Noto+Sans+JP:wght@100&family=Rampart+One&display=swap');
-.header{
+
+
+.container{
+    box-sizing: border-box;
+    width: 100%;
     
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right:1rem;
+}
+.header{
+    display:grid;
+    grid-template-columns: 7fr 3fr;
+    box-sizing: border-box;
+    align-items: center;
+
+
     position: fixed;
-    right: 10px;
     border-radius: 10px;
     backdrop-filter: blur(20%);
     background-color:rgb(43, 42, 51,0.7);
     width: 100%;
     height: 4rem;
+    
+    align-items: center;
+    padding-left:2rem;
+
+
 }
 
-a{
-    color: lightpink;
-    font-size: 1rem;
-    font-family: 'Nanum Gothic', sans-serif;
-    text-decoration: none;
-    text-align: center;
-    padding: 1rem;
-    background-color: transparent;
+.containerLinks{
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+    
 }
-a:hover{
-    opacity: 40%;
+
+.Link{
+    color: azure;
+    text-decoration: none;
+    
 }
+.Link:hover{
+    opacity: 50%;
+    color:lightgrey
+}
+
+
+.search{
+    border: 1px solid blue;
+}
+

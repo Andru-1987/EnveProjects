@@ -4,7 +4,7 @@ import React from "react";
 
 
 const MovieHomePageTitle=()=>{
-    return <h1>Home</h1>
+    return <h1>HOME</h1>
 }
     
 

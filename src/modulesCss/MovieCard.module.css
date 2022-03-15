@@ -22,6 +22,11 @@
     animation:spinner 2s ease;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 @keyframes spinner {
     100%{
         transform: rotateZ(360deg);

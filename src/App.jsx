@@ -1,32 +1,42 @@
 import React from "react";
 
 import {BrowserRouter as Router,
-    Routes,Route,Link
+    Routes,Route,NavLink
 } from "react-router-dom";
 
 
 
-import { MovieSector } from "./assets/MovieSector";
-import MovieTitle from "./assets/MovieTitle";
-import MovieHomePageTitle from "./assets/MoviesHomePageTitle";
+import { MovieSector } from "./pages/MovieBillboard";
+import MovieTitle from "./components/MovieTitle";
+import MovieHomePageTitle from "./components/MoviesHomePageTitle";
 import MovieLandingPage from "./pages/MovieLandingPage";
 import MovieDetails from "./pages/MovieDetails";
 
 import styles from "./modulesCss/MovieHeader.module.css"
+import Search from "./components/SearchFilter";
 
 
 export default function App(){
 
     return (
         <Router>
-        <header >
+        <header className={styles.container}>
             <nav className={styles.header}>
-                <Link to="/">
-                    <MovieHomePageTitle/>
-                </Link>
-                <Link to="/billboard">
+                <Search/>
+
+                <div className={styles.containerLinks}>
+                <NavLink 
+                className={styles.Link}
+                to="/billboard">
                     <MovieTitle/>
-                </Link>
+                </NavLink>
+                <NavLink 
+                className={styles.Link}
+                to="/">
+                    <MovieHomePageTitle/>
+                </NavLink>
+                </div>
+
             </nav>
         </header>
         <main>
